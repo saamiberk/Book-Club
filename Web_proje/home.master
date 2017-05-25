@@ -1,0 +1,88 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="home.master.cs" Inherits="home" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+       <link href="StyleSheet.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+   <div class="ballon">
+            <div class="banner">
+
+                <div class="banner-center">
+                    <div class="register">
+                        <div class="login-icon"><img src="images/user.png" /></div>
+                         <div class ="login">
+                              <a <%--style="text-decoration:none; color:rgba(255,255,255,0.8);"--%> href="signup.aspx"><%--Sign in/Join--%><asp:Label ID="login" runat="server" Text="Label" ForeColor="#CCCCCC"></asp:Label>&nbsp<asp:Label ID="puan" runat="server" Text="" ForeColor="#CCCCCC" > </asp:Label></a> </div>
+                       
+                        </div>
+                      <div class="logout">   <asp:Button ID="logout" runat="server" Text="Logout" CssClass="logout"  Visible="false" OnClick="logout_Click"/></div>
+                    <ul class="left-banner">
+                    </ul>
+
+                    <div class="center-banner">
+
+                        <div class="icon-rocket"></div>
+                        <div class="icon-rocket-text">FREE DELIVERY WORLDWIDE</div>
+
+                        
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="header">
+                <div class="header-center">
+                    <div class="book-club">
+                        <div class="book-icon">
+                            <img src="images/book-icon.png" />
+                        </div>
+
+
+                        <div class="book-text">BOOK CLUB</div>
+
+
+                    </div>
+
+
+                    <div class="search">
+                        <div class="search-icon"></div>
+                        <input id="searchbox" type="text" class="searchplace" placeholder="Search for books by keyword / title /author / ISBN" />
+
+                    </div>
+
+                    <div class="search-buttons">
+                        <asp:Button ID="Button1" runat="server" Text="Search" CssClass="searchButton" />
+
+                    </div>
+                </div>
+
+            </div></div>
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+
+        </asp:ContentPlaceHolder>        
+                  
+     
+    
+    </form>
+</body>
+</html>
